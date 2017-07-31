@@ -10,13 +10,10 @@
   <%= @user.email %>
 </p>
 
+<p>
+  <strong>Content:</strong>
+</p>
 <table>
-  <thead>
-    <tr>
-      <th>Content</th>
-    </tr>
-  </thead>
-
   <tbody>
     <% @user.microposts.each do |micropost| %>
       <tr>
